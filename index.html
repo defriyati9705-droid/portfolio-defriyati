@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><!-- PEMBUNGKU SELURUH WEBSITE-->
+
+<head> <!-- BAGIAN OTAK (css, title, meta, link file)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="stayle.css">
+    <!-- LINK => Menghubunngkan file lain, REL=> bilang ke browser: ini fle css, HREF=>alamat file css nya-->
+</head>
+
+<body> <!-- BAGIAN "TAMPILAN" YANG TERLIHAT USER-->
+    <div class="container"> <!-- DIV => Wadah/kotak (container), CONTAINER=> Nama kelas buat di panggil css-->
+        <!--HEADER-->
+        <header> <!-- BAGIAN KEPALA WEBSITE-->
+            <!--<h1>Belajar coding dari nol</h1> JUDUL UTAMA  -->
+            <!-- <p>Langkah kecil hari ini untuk masa depan remote work</p>penjelasan -->
+        </header>
+
+        <!--HERO-->
+        <section class="hero"> <!--bagian /area website-->
+            <img src="my.jpeg" alt="Foto Profile Defri">
+
+            <div class="hero-text"> <!--DIV=> wadah text-->
+                <h2>Halo, aku Defri👋</h2> <!--subjudul-->
+                <p>
+                    Aspiring Front End Developer
+                </p>
+                <a href="#from" id="btninstagram">Follow my Instagram<!-- A=> ancor (link), ID=> ID untuk JS-->
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <h2>about Me</h2>
+            <p>
+                Aku Defri, lulusan SMK RPL yang sedang belajar Front End Developer.
+                Saat ini aku fokus membangun website sederhana menggunakan
+                HTM, CSS, dan JavaScript
+            </p>
+
+        </section>
+
+        <!-- SKILS -->
+        <section class="skills">
+            <div>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript (Basic)</span>
+                <span>Responsi Design</span>
+            </div>
+        </section>
+
+        <!--  PROJECT -->
+        <section class="proctject">
+            <h2> Project</h2>
+            <div>
+                <h3> Laerning page Portolio (Project belajar mandiri) </h3>
+                <p>
+                    Website portfolio satu halaman menggunakan HTML, CSS, dan JavaScript.
+                    Dibuat sebagai project belajar Front End.
+                </p>
+
+                <span class="project-status">In Progress</span>
+
+                <div class="project-action">
+                    <a href="#" class="btn-project">Lihat Project</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CONTAC/ FROM-->
+        <section class="from-section" id="from">
+            <h2>kenalan dulu yuk 👋</h2>
+
+            <input type="text" id="inputNama" placeholder="Masukkan nama kamu">
+            <!--INPUT= field input, ID= untuk js ambil data, PLACEHOLDER= tekx bayangan di input-->
+
+            <button id="btnSubmit" type="button">Kirim</button>
+            <p id="hasil"></p> <!--ID=>tempat JS nampil output-->
+        </section>
+        <!-- FOOTER -->
+        <SEction>
+            <p> ©2026 Defri. Belajar Front End Developer</p>
+        </SEction>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

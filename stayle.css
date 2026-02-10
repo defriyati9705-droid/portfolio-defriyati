@@ -1,0 +1,249 @@
+     /* ===== GLOBAL ===== */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;                       /*batas lebar biar enak dibaca */
+    margin:  auto;                         /*posisi tengah*/
+    padding: 40px 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #666;
+}
+
+/* ===== HERO ===== */
+/*.hero {
+  display: flex;
+  gap: 40px;
+  align-items: center;   vertikal tengah 
+  background-color: #5b6fe5;
+  padding: 50px 60px;         RUANG DALAM hero 
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 40px;
+  justify-content: center;    isi ke tengah 
+} */ 
+
+.hero{
+  display: flex;                     /*bikin foto & teks sejajar*/
+  align-items: center;                /*Sejajar secara vertikal*/
+  gap: 40px;                         /* jarak foto & teks */
+
+  padding: 56px;                /* napas di dalam hero */
+  background-color: #5f6f62;       /* biru lebih lembut */
+  border-radius: 28px;               /* sudut halus */
+
+  margin-bottom: 96px;               /* jarak ke about me */
+
+}
+
+.hero img{
+    width: 260px;                   /* foto cukup besar */
+    border-radius: 20px;
+    box-shadow: 0 10x 30px rgba(0,0,0,0.15); /*bikin foto naik dari backgrod */
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1,
+.hero-text h2{
+  margin-bottom: 8px;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  margin-bottom: 18px;
+ 
+}
+
+.hero-text a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: white;
+  color: #5f6fe2;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  text-align: center;        /* semua teks rata tengah */
+  margin: 800px aouto 40px;   /*Jarak atas & tengah halaman */
+  max-width: 700px;          /*Batas lebar biar nggak ke panjangan */
+}
+
+.about h2{
+font-size: 28px;
+margin-bottom: 16px;        /* jarak judul ke paragraf */
+}
+
+.about p{
+   font-size: 16px;
+    color: #444;
+    line-height: 1.7;        /* jarak antar baris biar nyaman*/
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  display: flex;             /* horizontal */
+  justify-content: center;   /* bikin ke tengah */
+  gap: 16px;                 /* jarak antar skill */
+  flex-wrap: wrap;           /* biar turun rapi di layar kecil */
+  max-width: 700px;          /* biar gak terlalu lebar */
+ /*  margin: 30px auto 0;       tengah + jarak atas */
+  margin-top: 30px;
+}
+
+.skills span {
+  background-color: #f0f0f0;
+  padding: 8px 16px;    /* Pill style */
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 6 px rgba (0,0,0,0,1);      /*bayangan halus*/
+}
+
+.skills span:hover {
+  background-color: #5b6fe5;                  /* warna saat hover*/
+  color: white;
+  transition:translatey(-2px);                  /*naik dikit pas disentuh */
+}
+
+.skills ul {
+    display:flex;
+    justify-content: baseline;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li{
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* ===== PROJECT ===== */
+.project {
+  margin:80px;
+  max-width:760px;
+  text-align: center;
+}
+.project h2{
+  margin-bottom: 30px;
+}
+
+/*==== PROJECT CARD =====*/
+.project-card{
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.project-card p{
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/*===== STATUS =====*/
+.project-STATUS{
+display: inline-block;
+background-color: #fff3cd;
+color: #856404;
+padding: 6px 14px;
+border-radius: 999px;
+font-size: 13px;
+margin-bottom: 20px;
+}
+
+/*==== BUTTON ====*/
+.project-action{
+  margin-top: 20px;
+}
+
+.btn-project {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #5b6fe5;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn-project:hover {
+  background-color: #4a5bd1;
+}
+
+/* ===== FORM ===== */
+.form-section {
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.form-section input {
+  padding: 10px;
+  width: 250px;
+}
+
+.form-section button {
+  padding: 10px 16px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px 0;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+  
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 180px;
+  }
+}
